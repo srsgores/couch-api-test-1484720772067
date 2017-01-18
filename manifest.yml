@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: couch-api-test
+  host: couch-api-test
+  disk_quota: 1024M
+  services:
+  - couch-api-test-cloudantNoSQLDB
+  - Compose for MongoDB-94
+  - availability-monitoring-auto
